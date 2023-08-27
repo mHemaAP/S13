@@ -31,7 +31,7 @@ def get_device():
 
 DATASET = 'PASCAL_VOC'
 DEVICE = get_device()
-ACTIVATION = 'relu'
+ACTIVATION = 'lrelu'
 seed_everything()  # If you want deterministic behavior
 NUM_WORKERS = min(os.cpu_count(), 4)
 BATCH_SIZE = 32
